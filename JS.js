@@ -64,11 +64,11 @@ class MenuButtonActions {
 // TOUFIC'S COMMENT: Placeholder for the roving tabindex logic  ;)
         if (item === newMenuitem) {
           item.tabIndex = 0;
+          newMenuitem.focus();
         } else {
           item.tabIndex = -1;
         }
       });
-      newMenuitem.focus();
   }
 
   setFocusToFirstMenuitem() {
